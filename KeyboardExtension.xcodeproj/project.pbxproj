@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3456600D1CBB9A1200BD5761 /* KeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3456600C1CBB9A1200BD5761 /* KeyVC.m */; };
 		34A16FF81CBB84120022F429 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A16FF71CBB84120022F429 /* main.m */; };
 		34A16FFB1CBB84120022F429 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A16FFA1CBB84120022F429 /* AppDelegate.m */; };
 		34A16FFE1CBB84120022F429 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A16FFD1CBB84120022F429 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		34A170061CBB84120022F429 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A170041CBB84120022F429 /* LaunchScreen.storyboard */; };
 		34A170111CBB84120022F429 /* KeyboardExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A170101CBB84120022F429 /* KeyboardExtensionTests.m */; };
 		34A1701C1CBB84120022F429 /* KeyboardExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A1701B1CBB84120022F429 /* KeyboardExtensionUITests.m */; };
-		34A170311CBB844C0022F429 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A170301CBB844C0022F429 /* KeyboardViewController.m */; };
 		34A170351CBB844C0022F429 /* KeyboardExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34A1702D1CBB844C0022F429 /* KeyboardExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3456600B1CBB9A1200BD5761 /* KeyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyVC.h; sourceTree = "<group>"; };
+		3456600C1CBB9A1200BD5761 /* KeyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyVC.m; sourceTree = "<group>"; };
 		34A16FF31CBB84120022F429 /* KeyboardExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A16FF71CBB84120022F429 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34A16FF91CBB84120022F429 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,8 +77,6 @@
 		34A1701B1CBB84120022F429 /* KeyboardExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardExtensionUITests.m; sourceTree = "<group>"; };
 		34A1701D1CBB84120022F429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34A1702D1CBB844C0022F429 /* KeyboardExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyboardExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		34A1702F1CBB844C0022F429 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
-		34A170301CBB844C0022F429 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
 		34A170321CBB844C0022F429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,8 +179,8 @@
 		34A1702E1CBB844C0022F429 /* KeyboardExt */ = {
 			isa = PBXGroup;
 			children = (
-				34A1702F1CBB844C0022F429 /* KeyboardViewController.h */,
-				34A170301CBB844C0022F429 /* KeyboardViewController.m */,
+				3456600B1CBB9A1200BD5761 /* KeyVC.h */,
+				3456600C1CBB9A1200BD5761 /* KeyVC.m */,
 				34A170321CBB844C0022F429 /* Info.plist */,
 			);
 			path = KeyboardExt;
@@ -372,7 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34A170311CBB844C0022F429 /* KeyboardViewController.m in Sources */,
+				3456600D1CBB9A1200BD5761 /* KeyVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +609,7 @@
 				34A170221CBB84120022F429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A170231CBB84120022F429 /* Build configuration list for PBXNativeTarget "KeyboardExtensionTests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +618,7 @@
 				34A170251CBB84120022F429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A170261CBB84120022F429 /* Build configuration list for PBXNativeTarget "KeyboardExtensionUITests" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +627,7 @@
 				34A170281CBB84120022F429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		34A170361CBB844C0022F429 /* Build configuration list for PBXNativeTarget "KeyboardExt" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +636,7 @@
 				34A170381CBB844C0022F429 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

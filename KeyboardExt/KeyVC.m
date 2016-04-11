@@ -1,19 +1,19 @@
 //
-//  KeyboardViewController.m
-//  KeyboardExt
+//  KeyVC.m
+//  KeyboardExtension
 //
 //  Created by 杜甲 on 16/4/11.
 //  Copyright © 2016年 杜甲. All rights reserved.
 //
 
-#import "KeyboardViewController.h"
+#import "KeyVC.h"
 
-@interface KeyboardViewController ()
+@interface KeyVC()
 @property (nonatomic, strong) UIButton *nextKeyboardButton;
+
 @end
 
-@implementation KeyboardViewController
-
+@implementation KeyVC
 - (void)updateViewConstraints {
     [super updateViewConstraints];
     

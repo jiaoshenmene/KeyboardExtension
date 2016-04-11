@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|  
   s.name             = "KeyboardExtension"  
-  s.version          = "0.0.1"  
+  s.version          = "0.0.2"  
   s.summary          = "A marquee view used on iOS."  
   #s.description      = <<-DESC  
    #                    It is a marquee view used on iOS, which implement by Objective-C.  
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true  
   
   s.source_files = 'KeyboardExt/**/*'  , 'Pods/**/*.{h,m}'
-  s.resources = 'KeyboardExt/Info.plist'
+  #s.resources = 'KeyboardExt/Info.plist'
   # s.resources = 'Assets'  
   
   # s.ios.exclude_files = 'Classes/osx'  
